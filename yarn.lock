@@ -474,6 +474,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@serverless/typescript@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@serverless/typescript/-/typescript-2.17.0.tgz#e846e31907747e3a6df1d2611c367f8785ea4f21"
+  integrity sha512-mCQ5QWYkvz/rP0/LyOzOH5BJsFBJCWfFinOHtZZ1zqxKgC+sP4kAogOUeKlYgoAVce0saZ76k4s0JD4vrtMKxA==
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.1.tgz#e7df00f98a203324f6dc7cc606cad9d4a8ab2217"
