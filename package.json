@@ -1,0 +1,68 @@
+{
+  "name": "serverless-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytesword/serverless-rest.git"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "test": "jest --watch-all",
+    "test:coverage": "jest --coverage --passWithNoTests",
+    "format": "prettier --write \"src/**/*.tsx\"",
+    "lint": "tsc && tslint -p tsconfig.json -c tslint.json --fix"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*?(?=\\.test).*?\\.(tsx|ts)",
+    "transform": {
+      ".+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "!**/*.d.ts",
+      "!**/*.type.ts",
+      "!**/*.interface.ts",
+      "!**/*.mock.*"
+    ],
+    "coverageDirectory": "../coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
+  "keywords": [
+    "Serverless",
+    "REST",
+    "Framework"
+  ],
+  "author": "Gabriel M Tello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bytesword/serverless-rest/issues"
+  },
+  "homepage": "https://github.com/bytesword/serverless-rest#readme"
+}
