@@ -1,3 +1,3 @@
 export interface ModuleProps {
-    controllers: Array<{[key: string]: any}>;
+    controllers: Array<{ [key: string]: any }>;
 }

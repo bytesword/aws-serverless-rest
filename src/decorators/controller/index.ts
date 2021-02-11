@@ -1,28 +1,28 @@
 /**
  * Builds the controller
- * 
- * @param path 
+ *
+ * @param path
  */
 export function Controller(path: string): any {
-    return (
-        CurrentController
-    ) => {
-        let newController = {};
-        let controller = new CurrentController();
+    return (CurrentController) => {
+        const newController = {};
+        const controller = new CurrentController();
         controller.path = path;
 
-        Object.getOwnPropertyNames(CurrentController.prototype).forEach(ApiEndpoint => {
-            const controllerParams = ['path', 'constructor', 'service'];
-            if(controllerParams.includes(ApiEndpoint)) return;
-            
-            controller[ApiEndpoint] = {
-                service: controller.service,
-                path
-            }
+        Object.getOwnPropertyNames(CurrentController.prototype).forEach(
+            (ApiEndpoint) => {
+                const controllerParams = ['path', 'constructor', 'service'];
+                if (controllerParams.includes(ApiEndpoint)) return;
 
-            newController[ApiEndpoint] = controller[ApiEndpoint];
-        });
+                controller[ApiEndpoint] = {
+                    service: controller.service,
+                    path,
+                };
+
+                newController[ApiEndpoint] = controller[ApiEndpoint];
+            },
+        );
 
         return newController;
-    }
+    };
 }
