@@ -1,3 +1,3 @@
-import { AWS } from "@serverless/typescript";
+import { Functions } from 'serverless/aws';
 
-export type AWSAppModule = AWS["functions"];
+export type AWSAppModule = Functions;

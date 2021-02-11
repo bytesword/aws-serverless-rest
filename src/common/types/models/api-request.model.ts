@@ -1,4 +1,4 @@
 export class ApiRequestParams {
-    body?: any;
-    pathParameters?: any;
+    public body?: any;
+    public pathParameters?: any;
 }

@@ -1,22 +1,21 @@
-import { ModuleProps } from "./module-props.interface";
+import { AWSAppModule } from 'common/types/interfaces/aws-app-module.interface';
+import { ModuleProps } from './module-props.interface';
 
 /**
  * Merges the controller list
- * 
- * @param props 
+ *
+ * @param props
  */
 export const Module = (props: ModuleProps) => {
-    return (
-        _constructor
-    ) => {
-        let module: any = {};
+    return (): AWSAppModule => {
+        let module: AWSAppModule = {};
 
-        props.controllers.forEach(CurrentController => {
+        props.controllers.forEach((CurrentController) => {
             module = {
                 ...module,
-                ...CurrentController
-            }
+                ...CurrentController,
+            };
         });
         return module;
     };
-}
+};

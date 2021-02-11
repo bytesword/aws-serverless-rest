@@ -1,18 +1,15 @@
-import { ApiEndpointParams } from "./api-endpoint-params.interface";
+import { ApiEndpointParams } from './api-endpoint-params.interface';
 
 /**
  * Turns a simple ApiEndpoint definition into a usable Serverless endpoint
- * 
- * @param params 
+ *
+ * @param params
  */
 export const ApiEndpoint = (params: ApiEndpointParams) => {
-    return (
-        target: any,
-        prop: string
-    ): void => {
+    return (target: any, prop: string): void => {
         let val = target[prop];
 
-        const getter = () =>  {
+        const getter = () => {
             return val;
         };
 
@@ -33,16 +30,16 @@ export const ApiEndpoint = (params: ApiEndpointParams) => {
                                     'X-Api-Key',
                                     'X-Amz-Security-Token',
                                     'X-Amz-User-Agent',
-                                    'authorizationToken'
-                                ]
+                                    'authorizationToken',
+                                ],
                             },
                             authorizer: {
-                                type: "aws_iam"
-                            }
-                        }
-                    }
+                                type: 'aws_iam',
+                            },
+                        },
+                    },
                 ],
-                ...params.custom
+                ...params.custom,
             };
         };
 
@@ -53,4 +50,4 @@ export const ApiEndpoint = (params: ApiEndpointParams) => {
             configurable: true,
         });
     };
-}
+};

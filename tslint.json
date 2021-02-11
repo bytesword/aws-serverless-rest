@@ -8,7 +8,7 @@
         "no-unused-expression": true
     },
     "rules": {
-        "no-any": true,
+        "no-any": false,
         "no-console": false,
         "eofline": true,
         "whitespace": [

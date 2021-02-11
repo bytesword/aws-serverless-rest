@@ -493,6 +493,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@types/aws-lambda@^8.10.71":
+  version "8.10.71"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.71.tgz#ab3084038411ce42f63b975e67aafb163f3aa353"
+  integrity sha512-l0Lag6qq06AlKllprAJ3pbgVUbXCjRGRb7VpHow8IMn2BMHTPR0t5OD97/w8CR1+wA5XZuWQoXLjYvdlk2kQrQ==
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz#4d8e9e51eb265552a7e4f1ff2219ab6133bdfb2d"
@@ -594,6 +599,11 @@
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.6.tgz#f4b1efa784e8db479cdb8b14403e2144b1e9ff03"
   integrity sha512-6gOkRe7OIioWAXfnO/2lFiv+SJichKVSys1mSsgyrYHSEjk8Ctv4tSR/Odvnu+HWlH2C8j53dahU03XmQdd5fA==
+
+"@types/serverless@^1.78.20":
+  version "1.78.20"
+  resolved "https://registry.yarnpkg.com/@types/serverless/-/serverless-1.78.20.tgz#f5b822722133e3b050bbdc7b840b9fa6ebf08edc"
+  integrity sha512-HMMKnOqcOR2Vo3IrSuJw+nZF+QtVOT0suIotl50PcHHThGINWJmQH/gWiU7lFGVjBSv+yUPJ/6MpYO1kycLHCw==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.0"
