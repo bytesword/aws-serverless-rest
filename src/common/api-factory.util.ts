@@ -10,12 +10,12 @@ class ApiFactoryStatic {
     /**
      * Provides the mechanism for trigger the decorators of the AppModule
      * returns an Aws Functions plain object
-     * 
-     * @param AppModule 
+     *
+     * @param AppModule
      */
     public create(AppModule: ClassConstructor<object>): Aws.Functions {
         this.apiDefinition = classToPlain(AppModule);
-        
+
         return this.apiDefinition;
     }
 }

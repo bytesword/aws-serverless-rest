@@ -6,17 +6,17 @@ import { AppModuleDecorator } from './types/module.type';
  *
  * @param params
  */
-export const Module: AppModuleDecorator = params => {
+export const Module: AppModuleDecorator = (params) => {
     return () => {
         let module: AwsAppModule = {};
         const imports = params.imports || [];
         const controllers = params.controllers || [];
 
-        [...imports, ...controllers].forEach(CurrentController => {
+        [...imports, ...controllers].forEach((CurrentController) => {
             module = {
                 ...module,
-                ...CurrentController
-            }
+                ...CurrentController,
+            };
         });
 
         return module;
