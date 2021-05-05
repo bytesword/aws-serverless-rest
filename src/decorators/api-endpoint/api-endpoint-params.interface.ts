@@ -1,6 +1,8 @@
-export interface ApiEndpointParams {
-    provider: string;
-    method: string;
-    path: string;
-    custom: { [key: string]: any };
+import Aws from "serverless/aws";
+import { ProviderExecutor } from "../provider/types/provider-executor.type";
+
+export interface ApiEndpointParams extends Aws.AwsFunctionHandler{
+    provider?: ProviderExecutor<any> | Function;
+    method?: string;
+    path?: string;
 }

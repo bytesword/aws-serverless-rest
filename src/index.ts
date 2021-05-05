@@ -8,4 +8,4 @@ export { Module } from './decorators/module';
 /**
  * Types
  */
-export { AWSAppModule } from './common/types/interfaces/aws-app-module.interface';
+export { AwsAppModule } from './common/types/interfaces/aws-app-module.interface';
