@@ -1,3 +1,3 @@
-import { Functions } from 'serverless/aws';
+import * as Aws from 'serverless/aws';
 
-export type AWSAppModule = Functions;
+export type AwsAppModule = Aws.Functions;
