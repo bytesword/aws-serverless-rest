@@ -1,0 +1,18 @@
+# Node modules
+node_modules
+
+# Non-package usable code
+src
+**/*.test.*
+
+# Miscelaneous
+coverage
+.prettierrc.json
+.eslintrc.json
+README.md
+.npmignore
+package-lock.json
+tsconfig.json
+tslint.json
+*.log
+yarn.lock
