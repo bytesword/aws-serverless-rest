@@ -1,12 +1,23 @@
 {
-  "name": "serverless-rest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@bytesword/serverless-rest",
+  "version": "0.0.1",
+  "description": "Serverless Rest Framework",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bytesword/serverless-rest.git"
   },
+  "keywords": [
+    "Serverless",
+    "REST",
+    "Framework"
+  ],
+  "author": "Gabriel M Tello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bytesword/serverless-rest/issues"
+  },
+  "homepage": "https://github.com/bytesword/serverless-rest#readme",
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "test": "jest --watch-all",
@@ -55,17 +66,6 @@
       }
     }
   },
-  "keywords": [
-    "Serverless",
-    "REST",
-    "Framework"
-  ],
-  "author": "Gabriel M Tello",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bytesword/serverless-rest/issues"
-  },
-  "homepage": "https://github.com/bytesword/serverless-rest#readme",
   "dependencies": {
     "@serverless/typescript": "^2.17.0",
     "@types/serverless": "^1.78.20",
